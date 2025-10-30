@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Zunair Amjad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(5, 5, 68);
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgb(26, 26, 134);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: white;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 40px;
+        }
+
+        .contact-info h2 {
+            color: blueviolet;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        form input,
+        form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        form button {
+            padding: 12px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background-color: darkviolet;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(26, 26, 134);
+            color: white;
+            margin-top: 40px;
+        }
+
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Name:</strong> Zunair Amjad</p>
+            <p><strong>Email:</strong> <a href="mailto:zunair@example.com">chzunairamjad08@gmail.com</a></p>
+            <p><strong>Website:</strong> <a href="https://www.zunairamjadportfolio.com" target="_blank">www.zunairamjadportfolio.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zunairamjad" target="_blank">linkedin.com/in/zunairamjad</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/zunairamjad" target="_blank">github.com/zunairamjad</a></p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Me a Message</h2>
+            <form action="mailto:zunair@example.com" method="post" enctype="text/plain">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Zunair Amjad | All Rights Reserved
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(5, 5, 68);
+            color: white;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(26, 26, 134);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(100, 100, 124);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            /* margin: 70px 0; */
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .rightsection img {
+
+            width: 80%;
+            margin: 30px 0;
+            width: 400px;
+            height: 400px;
+
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(153, 153, 226);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.7rem;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 76vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+
+        }
+
+        .image-top {
+            width: 28px;
+            position: relative;
+            top: -23px;
+            left: -11px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            left: 3px;
+            width: 100px;
+
+        }
+
+        .vertical-desc {
+
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 12px;
+        }
+
+        .footer {
+            background-color: #5b14a7;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        footer .text-center {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .leftsection .buttons {
+            padding: 50px 0;
+        }
+        .zunair{
+             width: 200px;          /* same width and height ensures a circle */
+    height: 200px;
+    border-radius: 50%;    /* makes it round */
+    object-fit: cover;     /* keeps aspect ratio inside the circle */
+    display: block;        /* removes inline spacing issues */
+    margin: 0 auto;        /* centers the image horizontally */
+    border: 3px solid #333; /* optional border */
+        }
+        .btn-toggle {
+    padding: 8px 12px;
+    margin-left: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+body.light-mode .btn-toggle {
+    background-color: #ddd;
+    color: #333;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Zunair's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                 <button class="btn-toggle" id="modeToggle">Dark Mode</button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name Is <span class="purple">Zunair Amjad</span>
+                <div>and I am a passionate</div>
+                <div>Web Developer</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="window.location.href='zunair.jpg'">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img class= "zunair"src="WhatsApp Image 2025-10-30 at 09.03.10_caf68e1f.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="grey">What i Have Done So Far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/html.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer(2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Developed responsive, SEO-friendly web pages using semantic HTML5 and best practices. Ensured
+                        cross-browser compatibility and optimized page performance.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/css.png" alt="">
+                    <div class="vertical-title">
+                        CSS Developer(2012-2014)
+                    </div>
+                    <div class="vertical-desc">
+                        Styled responsive websites using modern CSS3 techniques. Ensured consistent layouts across all
+                        devices and browsers.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/node.js].jpeg" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer(2014-2016)
+                    </div>
+                    <div class="vertical-desc">
+                        Built real-time applications using WebSockets. Optimized server-side logic for efficiency and
+                        reduced response times.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/game.jpeg" alt="">
+                    <div class="vertical-title">
+                        Game Developer(2016-2018)
+                    </div>
+                    <div class="vertical-desc">
+                        Optimized game performance for smooth user experience. Integrated assets, sound, and UI for
+                        immersive gameplay.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/twitter.png" alt="">
+                    <div class="vertical-title">
+                        App Developer(2023-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Developed mobile applications for Android/iOS with clean UI and responsive design. Ensured
+                        smooth performance across devices.
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Zunair's Developer</h3>
+                <h3>Portfolio</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Programming Hub</li>
+                    <li>Leet Code</li>
+                    <li>Dcoder</li>
+                    <li>Replit</li>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>Kotlin</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    <li>C#</li>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>Sql</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center">
+            www.ZunairAmjadporfolio.com | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Website Designer', 'Website Developer', 'App Developer', 'Game Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+    const toggleBtn = document.getElementById('modeToggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('light-mode'); // toggles light-mode class
+
+        // Change navbar colors
+        if(body.classList.contains('light-mode')) {
+            body.style.backgroundColor = 'white';
+            body.style.color = 'black';
+            document.querySelector('nav').style.backgroundColor = 'rgb(200, 200, 255)';
+            toggleBtn.textContent = 'Dark Mode';
+        } else {
+            body.style.backgroundColor = 'rgb(5, 5, 68)';
+            body.style.color = 'white';
+            document.querySelector('nav').style.backgroundColor = 'rgb(26, 26, 134)';
+            toggleBtn.textContent = 'Light Mode';
+        }
+    });
+</script>
+
+</body>
+</html>
