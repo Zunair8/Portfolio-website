@@ -18,7 +18,6 @@
             background-color: rgb(5, 5, 68);
             color: white;
             font-family: "Poppins", sans-serif;
-
         }
 
         nav {
@@ -29,25 +28,24 @@
             background-color: rgb(26, 26, 134);
         }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
+            nav ul {
+                display: flex;
+                justify-content: center;
+            }
 
-        }
+                nav ul li {
+                    list-style: none;
+                    margin: 30px;
+                }
 
-        nav ul li {
-            list-style: none;
-            margin: 30px;
-        }
+                    nav ul li a {
+                        text-decoration: none;
+                        color: white;
+                    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(100, 100, 124);
-        }
+                        nav ul li a:hover {
+                            color: rgb(100, 100, 124);
+                        }
 
         .left {
             font-size: 1.5rem;
@@ -65,17 +63,15 @@
             /* margin: 70px 0; */
         }
 
-        .firstsection>div {
+        .firstsection > div {
             width: 30%;
         }
 
         .rightsection img {
-
             width: 80%;
             margin: 30px 0;
             width: 400px;
             height: 400px;
-
         }
 
         .purple {
@@ -113,7 +109,6 @@
             height: 2px;
             margin: 56px 0;
             display: flex;
-
         }
 
         .secondsection .vertical {
@@ -121,7 +116,6 @@
             width: 1px;
             background-color: white;
             margin: 0 100px;
-
         }
 
         .image-top {
@@ -129,7 +123,6 @@
             position: relative;
             top: -23px;
             left: -11px;
-
         }
 
         .vertical-title {
@@ -137,11 +130,9 @@
             top: 75px;
             left: 3px;
             width: 100px;
-
         }
 
         .vertical-desc {
-
             position: relative;
             top: 86px;
             color: gray;
@@ -160,15 +151,14 @@
             align-items: center;
         }
 
-        .footer ul {
-            list-style: none;
-        }
+            .footer ul {
+                list-style: none;
+            }
 
         footer .text-center {
             text-align: center;
             color: gray;
             padding: 12px 0;
-
         }
 
         .leftsection .btn {
@@ -185,32 +175,40 @@
         .leftsection .buttons {
             padding: 50px 0;
         }
-        .zunair{
-             width: 200px;          /* same width and height ensures a circle */
-    height: 200px;
-    border-radius: 50%;    /* makes it round */
-    object-fit: cover;     /* keeps aspect ratio inside the circle */
-    display: block;        /* removes inline spacing issues */
-    margin: 0 auto;        /* centers the image horizontally */
-    border: 3px solid #333; /* optional border */
-        }
-        .btn-toggle {
-    padding: 8px 12px;
-    margin-left: 15px;
-    margin-top: 5px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-    font-weight: 500;
-    transition: 0.3s;
-}
 
-body.light-mode .btn-toggle {
-    background-color: #ddd;
-    color: #333;
-}
+        .zunair {
+            width: 200px;
+            /* same width and height ensures a circle */
+            height: 200px;
+            border-radius: 50%;
+            /* makes it round */
+            object-fit: cover;
+            /* keeps aspect ratio inside the circle */
+            display: block;
+            /* removes inline spacing issues */
+            margin: 0 auto;
+            /* centers the image horizontally */
+            border: 3px solid #333;
+            /* optional border */
+        }
+
+        .btn-toggle {
+            padding: 8px 12px;
+            margin-left: 15px;
+            margin-top: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        body.light-mode .btn-toggle {
+            background-color: #ddd;
+            color: #333;
+        }
     </style>
 </head>
 
@@ -225,8 +223,9 @@ body.light-mode .btn-toggle {
                     <li><a href="services.html">Services</a></li>
                     <li><a href="">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
-                 <button class="btn-toggle" id="modeToggle">Dark Mode</button>
+
                 </ul>
+                <button class="btn-toggle" id="modeToggle">Dark Mode</button>
             </div>
         </nav>
     </header>
@@ -239,11 +238,11 @@ body.light-mode .btn-toggle {
                 <span id="element"></span>
                 <div class="buttons">
                     <button class="btn" onclick="window.location.href='zunair.jpg'">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    <button class="btn" onclick="window.location.href='https://github.com/Zunair8/Portfolio-website'" >Visit Github</button> 
                 </div>
             </div>
             <div class="rightsection">
-                <img class= "zunair"src="WhatsApp Image 2025-10-30 at 09.03.10_caf68e1f.jpg" alt="">
+                <img class="zunair" src="WhatsApp Image 2025-10-30 at 09.03.10_caf68e1f.jpg" alt="">
             </div>
         </section>
         <hr>
@@ -352,26 +351,27 @@ body.light-mode .btn-toggle {
         });
     </script>
     <script>
-    const toggleBtn = document.getElementById('modeToggle');
-    const body = document.body;
+        const toggleBtn = document.getElementById('modeToggle');
+        const body = document.body;
 
-    toggleBtn.addEventListener('click', () => {
-        body.classList.toggle('light-mode'); // toggles light-mode class
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-mode'); // toggles light-mode class
 
-        // Change navbar colors
-        if(body.classList.contains('light-mode')) {
-            body.style.backgroundColor = 'white';
-            body.style.color = 'black';
-            document.querySelector('nav').style.backgroundColor = 'rgb(200, 200, 255)';
-            toggleBtn.textContent = 'Dark Mode';
-        } else {
-            body.style.backgroundColor = 'rgb(5, 5, 68)';
-            body.style.color = 'white';
-            document.querySelector('nav').style.backgroundColor = 'rgb(26, 26, 134)';
-            toggleBtn.textContent = 'Light Mode';
-        }
-    });
-</script>
+            // Change navbar colors
+            if (body.classList.contains('light-mode')) {
+                body.style.backgroundColor = 'white';
+                body.style.color = 'black';
+                document.querySelector('nav').style.backgroundColor = 'rgb(200, 200, 255)';
+                toggleBtn.textContent = 'Dark Mode';
+            } else {
+                body.style.backgroundColor = 'rgb(5, 5, 68)';
+                body.style.color = 'white';
+                document.querySelector('nav').style.backgroundColor = 'rgb(26, 26, 134)';
+                toggleBtn.textContent = 'Light Mode';
+            }
+        });
+    </script>
 
 </body>
+
 </html>
